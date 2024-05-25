@@ -21,7 +21,7 @@ export default siteConfig({
   github: 'slendymilky',
   linkedin: 'yann-solliard',
   telegram: 'slendymilky',
-  discord: 'My Server',  /* Server Name */
+  discord: 'Serveur iMot3k',  /* Server Name */
   discord_invite: 'https://discord.gg/4jNmg9qSJU', /* Discord invite link */
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
