@@ -14,6 +14,7 @@ import /* Font Awesome */
   FaMastodon,
   FaGithub,
   FaLinkedin,
+  FaTelegram,
   FaZhihu,
   FaEnvelopeOpenText
 } from "react-icons/fa";
