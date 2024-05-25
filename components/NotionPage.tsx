@@ -24,9 +24,10 @@ import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
+import { PageFooter } from './PageFooter'
+import { PageLink } from "./PageLink";
 import styles from './styles.module.css'
-import { PageFooter } from '@/components/PageFooter'
-import PageLink from "@/components/PageLink";
+
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -200,8 +201,12 @@ export const NotionPage: React.FC<types.PageProps> = ({
     [block, recordMap, isBlogPost]
   )
 
-  const pageFooter = React.useMemo(() => <PageFooter isBlogPost={isBlogPost} />, [isBlogPost])
-
+  const pageFooter = React.useMemo(
+    () => (
+      <PageFooter isBlogPost={isBlogPost} />
+    ),
+    [isBlogPost]
+  )
   const footer = React.useMemo(() => <Footer />, [])
 
   if (router.isFallback) {

@@ -41,6 +41,12 @@ export default siteConfig({
   // environment variables. see the readme for more info
   isRedisEnabled: false,
 
+  // uncomment gisucs config to enable gisucs, get these keys from https://giscus.app/
+  giscusRepo: 'SlendyMilky/yannsolliard.ch',
+  giscusRepoId: 'R_kgDOMAEJ5A',
+  giscusCategory: 'Announcements',
+  giscusCategoryId: 'DIC_kwDOMAEJ5M4Cfm5c'
+
   // map of notion page IDs to URL paths (optional)
   // any pages defined here will override their default URL paths
   // example:
