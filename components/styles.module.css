@@ -90,6 +90,10 @@
   color: #2795e9;
 }
 
+.discord:hover {
+  color: #5865f2;
+}
+
 .twitter:hover {
   color: #2795e9;
 }
@@ -112,6 +116,10 @@
 
 .linkedin:hover {
   color: #0077b5;
+}
+
+.telegram:hover {
+  color: #24A1DE;
 }
 
 .newsletter:hover {
