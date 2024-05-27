@@ -155,13 +155,6 @@ const propertySelectValue = (
   return defaultFn()
 }
 
-const HeroHeader = dynamic<{ className?: string }>(
-  () => import('./HeroHeader').then((m) => m.HeroHeader),
-  { ssr: false }
-)
-
-
-
 const propertyTextValue = (
   { schema, pageHeader },
   defaultFn: () => React.ReactNode
@@ -241,18 +234,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
     [isBlogPost]
   )
   const footer = React.useMemo(() => <Footer />, [])
-
-  /* const pageCover = React.useMemo(() => {
-    if (isBioPage) {
-      return (
-        <HeroHeader className='notion-page-cover-wrapper notion-page-cover-hero' />
-      )
-    } else {
-      return null
-    }
-  }, [isBioPage]) */
-
-
 
   if (router.isFallback) {
     return <Loading />
