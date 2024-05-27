@@ -318,7 +318,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageFooter={pageFooter}
         footer={footer}
         pageTitle={tagsPage && propertyToFilterName ? title : undefined}
-        pageCover={pageCover}
       />
     </>
   )
