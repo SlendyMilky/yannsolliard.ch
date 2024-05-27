@@ -33,6 +33,7 @@ import { PageHead } from './PageHead'
 import { PageFooter } from './PageFooter'
 import PageLink from "@/components/PageLink";
 import styles from './styles.module.css'
+import Link from 'next/link'
 
 
 // -----------------------------------------------------------------------------
