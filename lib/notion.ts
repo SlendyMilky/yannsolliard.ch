@@ -1,5 +1,5 @@
 import { ExtendedRecordMap, SearchParams, SearchResults } from 'notion-types'
-import { mergeRecordMaps } from 'notion-utils'
+import { mergeRecordMaps, parsePageId } from 'notion-utils'
 import pMap from 'p-map'
 import pMemoize from 'p-memoize'
 
@@ -64,5 +64,30 @@ export async function getPage(pageId: string): Promise<ExtendedRecordMap> {
 }
 
 export async function search(params: SearchParams): Promise<SearchResults> {
-  return notion.search(params)
+  const body = {
+    type: 'BlocksInAncestor',
+    source: 'quick_find_public',
+    ancestorId: parsePageId(params.ancestorId),
+    sort: {
+      field: 'relevance'
+    },
+    limit: params.limit || 20,
+    query: params.query,
+    filters: {
+      isDeletedOnly: false,
+      isNavigableOnly: false,
+      excludeTemplates: true,
+      requireEditPermissions: false,
+      ancestors: [],
+      createdBy: [],
+      editedBy: [],
+      lastEditedTime: {},
+      createdTime: {},
+      ...params.filters
+    }
+  }
+  return notion.fetch<SearchResults>({
+    endpoint: 'search',
+    body,
+  });
 }
