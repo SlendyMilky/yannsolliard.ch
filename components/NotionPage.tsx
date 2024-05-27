@@ -167,6 +167,22 @@ const propertyTextValue = (
   return defaultFn()
 }
 
+const CalloutBlock = ({ block }) => {
+  const { properties, format } = block;
+  const colorClass = format?.block_color ? `notion-callout-${format.block_color}_background` : '';
+
+  return (
+    <div className={`notion-callout ${colorClass}`}>
+      {format?.page_icon && <div className="icon">{format.page_icon}</div>}
+      <div>
+        {properties?.title?.map((value, index) => (
+          <span key={index}>{value[0]}</span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export const NotionPage: React.FC<types.PageProps> = ({
   site,
   recordMap,
@@ -192,7 +208,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
       propertyLastEditedTimeValue,
       propertyTextValue,
       propertyDateValue,
-      propertySelectValue
+      propertySelectValue,
+      callout: CalloutBlock
     }),
     []
   )

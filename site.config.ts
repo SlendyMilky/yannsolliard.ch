@@ -21,8 +21,8 @@ export default siteConfig({
   github: 'slendymilky',
   linkedin: 'yann-solliard',
   // telegram: '',
-  discord: 'Serveur iMot3k',  /* Server Name */
-  discord_invite: 'https://discord.gg/4jNmg9qSJU', /* Discord invite link */
+  // discord: 'Serveur iMot3k',  /* Server Name */
+  // discord_invite: 'https://discord.gg/4jNmg9qSJU', /* Discord invite link */
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
@@ -59,7 +59,7 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
-  navigationStyle: 'default',
+  navigationStyle: 'custom',
   // navigationStyle: 'custom',
   // navigationLinks: [
   //   {

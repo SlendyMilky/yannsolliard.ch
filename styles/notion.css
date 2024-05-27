@@ -151,6 +151,11 @@
 
 .notion-callout {
   margin: 0.75em 0;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid lightgrey; /* Default Green Border for hint/tip */
 }
 
 .notion-hr {
@@ -282,9 +287,10 @@
 .notion-brown_background,
 .notion-gray_background {
   padding: 0 0.5rem;
-  margin: 0 -0.5rem 0 -0.25rem;
+  margin: 0 -0.5rem 1 -0.25rem;
   border-radius: 0.5rem;
   border-bottom-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
   box-decoration-break: clone;
 
   background-color: none;
@@ -292,68 +298,41 @@
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
-    #fdeed2 10.5%,
-    #fde4b5 85.29%,
+    #f1f1ef 0%,
+    #56565733 100%,
     var(--bg-color)
   );
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+              0 1px 3px rgba(0, 0, 0, 0.08);
+  color: #37352f;
 }
 
-.notion-purple_background {
+.notion-brown_background {
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
-    #e4d3fd 10.5%,
-    #d3b6ff 85.29%,
+    #ead1ac 0%,
+    #cd8032a8 100%,
     var(--bg-color)
   );
-}
-
-.notion-pink_background {
-  background-image: linear-gradient(
-    119deg,
-    var(--bg-color),
-    #ffd2e7 10.5%,
-    #ffadd3 85.29%,
-    var(--bg-color)
-  );
-}
-
-.notion-blue_background {
-  background-image: linear-gradient(
-    119deg,
-    var(--bg-color),
-    #d9eafd 10.5%,
-    #b3d6ff 85.29%,
-    var(--bg-color)
-  );
-}
-
-.notion-gray_background {
-  background-image: linear-gradient(
-    119deg,
-    var(--bg-color),
-    #cfcfcf 10.5%,
-    #a0a0a0 85.29%,
-    var(--bg-color)
-  );
-}
-
-.notion-red_background {
-  background-image: linear-gradient(
-   119deg,
-   var(--bg-color),
-   #ffc3c3 10.5%,
-   #fba6a3 85.29%,
-   var(--bg-color)
- );
 }
 
 .notion-orange_background {
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
-    #ffe6b1 10.5%,
-    #ffd09b 85.29%,
+    #FBCEB1 0%,
+    #ffbf008b 100%,
+    var(--bg-color)
+  );
+}
+
+.notion-yellow_background {
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #fafcaeab 0%,
+    #fbff006f 100%,
     var(--bg-color)
   );
 }
@@ -362,20 +341,170 @@
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
-    #d4eabc 10.5%,
-    #d2eabc 85.29%,
+    #90EE90 0%,
+    #4bbb177b 100%,
     var(--bg-color)
   );
 }
 
-.notion-brown_background {
+.notion-blue_background {
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
-    #cab7ae 10.5%,
-    #b1998d 85.29%,
+    #89cff09a 0%,
+    #0095ff7e 100%,
     var(--bg-color)
   );
+}
+
+.notion-purple_background {
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #cf9fff42 0%,
+    #5d3fd387 100%,
+    var(--bg-color)
+  );
+}
+
+.notion-pink_background {
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #FFC0CB 0%,
+    #ffb6c1b2 100%,
+    var(--bg-color)
+  );
+}
+
+.notion-red_background {
+  background-image: linear-gradient(
+   119deg,
+   var(--bg-color),
+   #F88379 0%,
+   #ee4c2bce 100%,
+   var(--bg-color)
+ );
+}
+
+.dark-mode .notion-red_background,
+.dark-mode .notion-pink_background,
+.dark-mode .notion-blue_background,
+.dark-mode .notion-purple_background,
+.dark-mode .notion-teal_background,
+.dark-mode .notion-yellow_background,
+.dark-mode .notion-orange_background,
+.dark-mode .notion-brown_background,
+.dark-mode .notion-gray_background {
+  padding: 0 0.5rem;
+  margin: 0 -0.5rem 1 -0.25rem;
+  border-radius: 0.5rem;
+  border-bottom-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
+  box-decoration-break: clone;
+
+  background-image: none;
+
+  background-image: linear-gradient(
+    135deg,
+    var(--bg-color-dark, #2b2b2b), /* Utilisez une couleur de fond plus sombre spécifiée ou une valeur par défaut */
+    #3a3a3a 0%,
+    #4b4b4b 100%,
+    var(--bg-color-dark, #2b2b2b)
+  );  
+  /* Adding a shadow for a more 3D effect 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9),
+              0 1px 3px rgba(0, 0, 0, 0.85);*/
+
+  /* Ensuring text inside is readable */
+  color: #ebebeb;
+}
+
+.dark-mode .notion-brown_background {
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #a52a2a72 0%,
+    #7b400069 100%,
+    var(--bg-color)
+  );
+}
+
+.dark-mode .notion-orange_background {
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #b873337f 0%,
+    #cc5500a3 100%,
+    var(--bg-color)
+  );
+}
+
+.dark-mode .notion-yellow_background {
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #ffdb5890 0%,
+    #ffd900a4 100%,
+    var(--bg-color)
+  );
+}
+
+.dark-mode .notion-teal_background {
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #5f857582 0%,
+    #097968c1 100%,
+    var(--bg-color)
+  );
+}
+
+.dark-mode .notion-blue_background {
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #89cff060 0%,
+    #0047AB 100%,
+    var(--bg-color)
+  );
+}
+
+.dark-mode .notion-purple_background {
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #cf9fff42 0%,
+    #5d3fd387 100%,
+    var(--bg-color)
+  );
+}
+
+.dark-mode .notion-pink_background {
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #AA336A 0%,
+    #673147 100%,
+    var(--bg-color)
+  );
+}
+
+.dark-mode .notion-red_background {
+  background-image: linear-gradient(
+   119deg,
+   var(--bg-color),
+   #c41e3ad0 0%,
+   #770737 100%,
+   var(--bg-color)
+ );
+}
+
+/* Workaround for Firefox not supporting backdrop-filter yet */
+@-moz-document url-prefix() {
+  .dark-mode .notion-header {
+    background: hsla(203, 8%, 20%, 0.8);
+  }
 }
 
 .notion-row {
@@ -390,21 +519,6 @@
   overflow: visible !important;
 }
 
-
-.dark-mode .notion-red_background,
-.dark-mode .notion-pink_background,
-.dark-mode .notion-blue_background,
-.dark-mode .notion-purple_background,
-.dark-mode .notion-teal_background,
-.dark-mode .notion-yellow_background,
-.dark-mode .notion-orange_background,
-.dark-mode .notion-brown_background,
-.dark-mode .notion-gray_background {
-  padding: 0;
-  margin: 0;
-  border-radius: 0;
-  background: none !important;
-}
 
 /* if you don't want rounded page icon images, remove this */
 .notion-page-icon-hero.notion-page-icon-image {
@@ -425,13 +539,6 @@
   background: transparent;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   backdrop-filter: saturate(180%) blur(20px);
-}
-
-/* Workaround for Firefox not supporting backdrop-filter yet */
-@-moz-document url-prefix() {
-  .dark-mode .notion-header {
-    background: hsla(203, 8%, 20%, 0.8);
-  }
 }
 
 .notion-bookmark:hover {
