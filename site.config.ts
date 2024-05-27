@@ -72,5 +72,5 @@ export default siteConfig({
   //   }
   // ]
 
-  isSearchEnabled: false
+  isSearchEnabled: true
 })
