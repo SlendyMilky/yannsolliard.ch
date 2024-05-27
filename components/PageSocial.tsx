@@ -26,7 +26,7 @@ const socialLinks: SocialLink[] = [
   config.discord && {
     name: 'discord',
     href: `${config.discord_invite}`, // Invite URL of the Discord server
-    title: `${config.discord} on Discord`, // Name of the Discord server
+    title: `${config.discord}`, // Name of the Discord server
     icon: (
       <FaDiscord />
     )
