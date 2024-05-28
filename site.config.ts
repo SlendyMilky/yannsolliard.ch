@@ -68,7 +68,7 @@ export default siteConfig({
      },
      {
        title: 'Bio',
-       pageId: 'Moi-0aebde79254b4f0e8a04a451c5c426a9'
+       pageId: 'propos-de-moi-0aebde79254b4f0e8a04a451c5c426a9'
      }
  ],
 
