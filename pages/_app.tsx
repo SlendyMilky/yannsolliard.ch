@@ -22,6 +22,7 @@ import 'styles/prism-theme.css'
 import { bootstrap } from '@/lib/bootstrap-client'
 import { fathomConfig, fathomId, isServer, posthogConfig, posthogId } from '@/lib/config'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 if (!isServer) {
   bootstrap()
@@ -60,5 +61,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Component {...pageProps} />
       <Analytics />
+      <SpeedInsights />
     </>)
 }
