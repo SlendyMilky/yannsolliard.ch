@@ -17,7 +17,7 @@ export const PageFooter: React.FC<{
           repoId={config.giscusRepoId}
           category={config.giscusCategory}
           categoryId={config.giscusCategoryId}
-          mapping="pathname"
+          mapping="title"
           reactionsEnabled="1"
           emitMetadata="0"
           inputPosition="bottom"

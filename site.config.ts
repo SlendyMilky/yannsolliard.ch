@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Yann Solliard',
 
   // open graph metadata (optional)
-  description: 'Le site de Yann Solliard faisant office de vitrine !',
+  description: '👋 Yann Solliard, Administrateur Système Linux passionné, expert en solutions open-source, avec une expertise en virtualisation, automatisation et gestion infrastructures IT.',
 
   // social usernames (optional)
   // twitter: '',
@@ -68,7 +68,7 @@ export default siteConfig({
      },
      {
        title: 'Bio',
-       pageId: 'propos-de-moi-0aebde79254b4f0e8a04a451c5c426a9'
+       pageId: 'A-propos-de-moi-0aebde79254b4f0e8a04a451c5c426a9'
      }
  ],
 
