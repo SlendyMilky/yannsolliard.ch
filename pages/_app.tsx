@@ -22,7 +22,6 @@ import 'styles/prism-theme.css'
 import { bootstrap } from '@/lib/bootstrap-client'
 import { fathomConfig, fathomId, isServer, posthogConfig, posthogId } from '@/lib/config'
 import { Analytics } from '@vercel/analytics/react'
-import { ThemeProvider } from '../context/ThemeContext'
 
 if (!isServer) {
   bootstrap()
@@ -57,10 +56,9 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  return (
-    <ThemeProvider>
+  return(
+    <>
       <Component {...pageProps} />
       <Analytics />
-    </ThemeProvider>
-  )
+    </>)
 }
