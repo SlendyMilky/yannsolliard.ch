@@ -114,7 +114,7 @@
 /* ========== TAGS PAGE END ========= */
 
 .notion-asset-caption {
-  text-align: left;
+  text-align: center;
 }
 
 .notion-asset-wrapper {
@@ -150,7 +150,7 @@
   margin-left: 2px;
   margin-right: 6px;
   width: auto;
-  height: auto;
+  height: 18px;
   max-width: none;
   max-height: none;
 }
@@ -159,7 +159,6 @@
 .notion-gallery-grid .notion-collection-card-property {
   white-space: unset;
 }
-
 .notion-gallery-grid .notion-page-title-text {
   font-size: 1.2em;
 }
@@ -212,7 +211,9 @@
 .notion-h2,
 .notion-h3 {
   margin-bottom: 0.25em;
+  text-align: center;
 }
+
 
 .notion-callout {
   margin: 0.75em 0;
@@ -223,6 +224,7 @@
   border: 1px solid lightgrey;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
               0 1px 3px rgba(0, 0, 0, 0.08);
+  --notion-orange_background_co: solid;
 }
 
 .notion-text {
@@ -299,9 +301,8 @@
   }
 }
 
-.notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-page-link {
+.notion-page-link {
   justify-content: center;
-  padding: 2em;
 }
 
 .notion-code {
@@ -333,6 +334,7 @@
   transition-duration: 300ms;
 }
 
+
 .notion-red_background,
 .notion-pink_background,
 .notion-blue_background,
@@ -349,6 +351,10 @@
   border-top-right-radius: 0.125rem;
   box-decoration-break: clone;
   background-color: none;
+}
+
+.notion-gray_background_co,
+.notion-gray_background {
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
@@ -356,11 +362,9 @@
     #56565733 100%,
     var(--bg-color)
   );
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-              0 1px 3px rgba(0, 0, 0, 0.08);
-  color: #37352f;
 }
 
+.notion-brown_background_co,
 .notion-brown_background {
   background-image: linear-gradient(
     119deg,
@@ -371,6 +375,7 @@
   );
 }
 
+.notion-orange_background_co,
 .notion-orange_background {
   background-image: linear-gradient(
     119deg,
@@ -381,6 +386,7 @@
   );
 }
 
+.notion-yellow_background_co,
 .notion-yellow_background {
   background-image: linear-gradient(
     119deg,
@@ -391,6 +397,7 @@
   );
 }
 
+.notion-teal_background_co,
 .notion-teal_background {
   background-image: linear-gradient(
     119deg,
@@ -401,6 +408,7 @@
   );
 }
 
+.notion-blue_background_co,
 .notion-blue_background {
   background-image: linear-gradient(
     119deg,
@@ -411,6 +419,7 @@
   );
 }
 
+.notion-purple_background_co,
 .notion-purple_background {
   background-image: linear-gradient(
     119deg,
@@ -421,6 +430,7 @@
   );
 }
 
+.notion-pink_background_co,
 .notion-pink_background {
   background-image: linear-gradient(
     119deg,
@@ -431,6 +441,7 @@
   );
 }
 
+.notion-red_background_co,
 .notion-red_background {
   background-image: linear-gradient(
     119deg,
@@ -457,6 +468,11 @@
   border-top-right-radius: 0.125rem;
   box-decoration-break: clone;
   background-image: none;
+  background-color: none;
+}
+
+.dark-mode .notion-gray_background_co,
+.dark-mode .notion-gray_background {
   background-image: linear-gradient(
     135deg,
     var(--bg-color-dark, #2b2b2b), /* Utilisez une couleur de fond plus sombre spécifiée ou une valeur par défaut */
@@ -464,13 +480,9 @@
     #4b4b4b 100%,
     var(--bg-color-dark, #2b2b2b)
   );
-  /* Adding a shadow for a more 3D effect 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9),
-              0 1px 3px rgba(0, 0, 0, 0.85);*/
-  /* Ensuring text inside is readable */
-  color: #ebebeb;
 }
 
+.dark-mode .notion-brown_background_co,
 .dark-mode .notion-brown_background {
   background-image: linear-gradient(
     119deg,
@@ -481,6 +493,7 @@
   );
 }
 
+.dark-mode .notion-orange_background_co,
 .dark-mode .notion-orange_background {
   background-image: linear-gradient(
     119deg,
@@ -491,6 +504,7 @@
   );
 }
 
+.dark-mode .notion-yellow_background_co,
 .dark-mode .notion-yellow_background {
   background-image: linear-gradient(
     119deg,
@@ -501,16 +515,18 @@
   );
 }
 
+.dark-mode .notion-teal_background_co,
 .dark-mode .notion-teal_background {
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
-    #5f857582 0%,
+    #84c5aa82 0%,
     #097968c1 100%,
     var(--bg-color)
   );
 }
 
+.dark-mode .notion-blue_background_co,
 .dark-mode .notion-blue_background {
   background-image: linear-gradient(
     119deg,
@@ -521,6 +537,7 @@
   );
 }
 
+.dark-mode .notion-purple_background_co,
 .dark-mode .notion-purple_background {
   background-image: linear-gradient(
     119deg,
@@ -531,6 +548,7 @@
   );
 }
 
+.dark-mode .notion-pink_background_co,
 .dark-mode .notion-pink_background {
   background-image: linear-gradient(
     119deg,
@@ -541,6 +559,7 @@
   );
 }
 
+.dark-mode .notion-red_background_co,
 .dark-mode .notion-red_background {
   background-image: linear-gradient(
     119deg,
