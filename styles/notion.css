@@ -22,15 +22,12 @@
   }
 }
 
-.notion-page-content-inner {
-  padding-right: 2rem;
-}
-
 .notion-frame {
   padding: 0;
 }
 
 .notion-aside {
+  margin-left: 2rem;
   margin-right: 2rem;
 }
 
@@ -131,7 +128,7 @@
 }
 
 .notion-header .notion-nav-header {
-  max-width: 1025px;
+  max-width: 1200px;
   margin: 0 auto;
   overflow-x: auto;
 }
