@@ -8,7 +8,7 @@
  */
 
  .notion {
-  --notion-max-width: 800px;
+  --notion-max-width: 900px;
   --notion-header-height: 54px;
 }
 
@@ -22,8 +22,67 @@
   }
 }
 
+.notion-page-content-inner {
+  padding-right: 2rem;
+}
+
 .notion-frame {
   padding: 0;
+}
+
+.notion-aside {
+  margin-right: 2rem;
+}
+
+.notion-table-of-contents {
+  list-style-type: none; /* Supprime les puces de la liste */
+  padding-left: 0;
+  margin: 0;
+  border-left: 2px solid;
+  border-image: linear-gradient(180deg, #d53e85, #832a7c) 1;
+}
+
+.notion-table-of-contents-item {
+  position: relative;
+  padding-left: 16px;
+  margin: 4px 0;
+  transition: background-color 0.3s, border-left-color 0.3s;
+}
+
+.notion-table-of-contents-item-body {
+  padding: 8px 0;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.notion-table-of-contents-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 13px;
+  z-index: -1;
+}
+
+.notion-table-of-contents-item-indent-level-0:before {
+  left: -12px; /* Ajuste à la barre principale */
+}
+
+.notion-table-of-contents-item-indent-level-1:before {
+  left: -24px;
+}
+
+.notion-table-of-contents-item-indent-level-2:before {
+  left: -36px;
+}
+
+.notion-table-of-contents-active-item {
+  border-left: 2px solid;
+  border-image: linear-gradient(180deg, #d53e85, #832a7c) 1;
+  transition: background-color 0.3s, border-left-color 0.3s;
 }
 
 
@@ -72,7 +131,7 @@
 }
 
 .notion-header .notion-nav-header {
-  max-width: 1200px;
+  max-width: 1025px;
   margin: 0 auto;
   overflow-x: auto;
 }
@@ -87,6 +146,7 @@
   grid-gap: 2.5vmin;
   gap: 2.5vmin;
   border-top: none;
+  text-align: justify;
 }
 
 .notion-gallery-grid .notion-page-icon-inline {
@@ -145,6 +205,7 @@
   padding: 0.5em 1em;
   line-height: 1.5;
   font-style: normal;
+  text-align: justify;
   font-size: 1em;
   border-left: 4px solid;
   border-image: linear-gradient(180deg, #d53e85, #832a7c) 1;
@@ -165,6 +226,10 @@
   border: 1px solid lightgrey;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
               0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.notion-text {
+  text-align: justify;
 }
 
 .notion-hr {
@@ -568,6 +633,13 @@
 ol:not(:has(> li)),
 ul:not(:has(> li)) {
   padding: 0 !important;
+}
+
+.notion-simple-table {
+  width: 100%;
+  margin: 0.75em 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+              0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .notion-block-dfc7f709ae3e42c69292f6543d5586f0 .notion-collection-header,
