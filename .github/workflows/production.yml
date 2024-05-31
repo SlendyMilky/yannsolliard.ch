@@ -14,7 +14,8 @@ jobs:
       - name: Install Yarn
         run: corepack enable && corepack prepare yarn@stable --activate
       - name: Install dependencies
-        run: yarn install
+        run: |
+          yarn install || yarn install --immutable
       - name: Install Vercel CLI
         run: yarn global add vercel
       - name: Pull Vercel Environment Information
