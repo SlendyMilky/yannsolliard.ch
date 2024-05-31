@@ -148,9 +148,9 @@ const propertySelectValue = (
   if (pageHeader && schema.type === 'multi_select' && value) {
     return (
       <Link href={`/tags/${value}`} key={key}>
-        <a>{defaultFn()}</a>
+        {defaultFn()}
       </Link>
-    )
+    );
   }
 
   return defaultFn()

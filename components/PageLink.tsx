@@ -9,12 +9,12 @@ type NextLinkProps = {
 
 const PageLink: FC<NextLinkProps> = ({ href, className, children }) => {
   return (
-    <Link href={href} passHref>
-      <a className={className}>
-        {children}
-      </a>
-    </Link>
-  )
+    (<Link href={href} passHref className={className}>
+
+      {children}
+
+    </Link>)
+  );
 }
 
 export default PageLink
