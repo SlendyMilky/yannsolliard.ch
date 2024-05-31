@@ -6,6 +6,7 @@
   "author": "Travis Fischer <travis@transitivebullsh.it>",
   "repository": "transitive-bullshit/nextjs-notion-starter-kit",
   "license": "MIT",
+  "packageManager": "yarn@1.22.22",
   "engines": {
     "node": ">=20"
   },
@@ -68,8 +69,7 @@
     "rss": "^1.2.2",
     "seedrandom": "^3.0.5",
     "shallowequal": "^1.1.0",
-    "throttle-debounce": "^3.0.1",
-    "vercel": "^34.2.4"
+    "throttle-debounce": "^3.0.1"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.3.1",
